@@ -1,0 +1,6 @@
+{
+  "Name": "GithubDemo",
+  "ProjectType": "Tests",
+  "Description": "Test Automation Project for github",
+  "MainFile": "Main.xaml"
+}
