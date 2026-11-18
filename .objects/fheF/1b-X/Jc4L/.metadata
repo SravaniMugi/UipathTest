@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Dashboard",
+  "Type": "Screen",
+  "Id": "Jc4LwsEHpkWqvyvixk_IWg",
+  "Reference": "po5Zxhh7K0KFM-1nknlhVg/Jc4LwsEHpkWqvyvixk_IWg",
+  "ParentRef": "po5Zxhh7K0KFM-1nknlhVg/1b-XYoU8hkOVFJpiLYg6bQ",
+  "Created": "2026-11-17T09:07:12.7764819Z",
+  "Updated": "2026-11-17T09:07:31.8704729Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -60,6 +60,20 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Github Demo\\TC02_gitTest.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "da025a00-b1b4-44fa-80cd-cbbf59101717",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Demo\\TC_SyntheticData.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b292ca80-2adc-4a8f-a348-7d79d1db9402",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "ACME\\TC_AddVendor.xaml"
       }
     ],
     "saveToCloud": false

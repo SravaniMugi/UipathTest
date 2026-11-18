@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YWzYkIq_9USSqKsTOWMVjQ" Reference="po5Zxhh7K0KFM-1nknlhVg/6T0Et2gTYk2026p3UMppag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/login" ContentHash="JXqEiswVrUiYVF8kVTtaBw" DesignTimeRectangle="210, 895, 89, 50" DesignTimeScaleFactor="1.5" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="1dde2875-c9b2-48c2-8a9a-1fa594514b8a" Reference="po5Zxhh7K0KFM-1nknlhVg/6T0Et2gTYk2026p3UMppag" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="a7bfc81fbdc50d570d034440575e4b8a.jpg" xmlns="">08M5is-i4bEebwPX3gVyyJA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
