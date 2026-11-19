@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1OpQR_4g00uEMdKDgbMsxw" Reference="po5Zxhh7K0KFM-1nknlhVg/TXk3f6_1Mk-f3BcM6r3QaA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="practicetestautomation.com/practice-test-login" ContentHash="f_Szn5SFdkaNi-LPSI0Ncw" DesignTimeRectangle="510, 1072, 191, 81" DesignTimeScaleFactor="1.5" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit' tag='BUTTON' /&gt;" Guid="4358d8ea-7c7a-4592-83f5-500039fef2dc" Reference="po5Zxhh7K0KFM-1nknlhVg/TXk3f6_1Mk-f3BcM6r3QaA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test Login | Practice Test Automation' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="806cd9efdbc2b14f15db88c2278a871e.jpg" xmlns="">01XJRh8_yEkWZTwslY0Tq8Q</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

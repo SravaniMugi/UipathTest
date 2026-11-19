@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ooWTXGTSD0u4FWf0gWlutg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="practicetestautomation.com/logged-in-successfully" DesignTimeRectangle="395, 534, 1129, 81" DesignTimeScaleFactor="1.5" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" Guid="bc13580e-08fc-4ee3-9790-3c94fdf44620" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Logged In Successfully | Practice Test Automation' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="dfd1a2f015e1cbfb7e70cb3d42716916.jpg" xmlns="">0uMgOvC686UGPWhX7-a0SJQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

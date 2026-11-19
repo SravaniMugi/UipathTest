@@ -1,0 +1,313 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LoginWithIf" this:LoginWithIf.User="student" this:LoginWithIf.Password="Password123" this:LoginWithIf.Scenario="Positive_CorrectCredential" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="User" Type="InArgument(x:String)" />
+    <x:Property Name="Password" Type="InArgument(x:String)" />
+    <x:Property Name="Scenario" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>LoginWithIf_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LoginWithIf" sap:VirtualizedContainerService.HintSize="1138,2007" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Test Login" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="560,2500" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="8960e50c-9079-41a0-bdcd-64f5a97118cb" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,2328" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8960e50c-9079-41a0-bdcd-64f5a97118cb" Text="[User]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="practicetestautomation.com/practice-test-login" ContentHash="sDPL4MfZXUGUzRhGEIpB5Q" DesignTimeRectangle="510, 794, 900, 72" DesignTimeScaleFactor="1.5" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='' aaname='Username' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2d5d3751-ec20-4dc9-b348-353255c99f18" InformativeScreenshot="d04adea442bf6da2591ca31d1e71c13e.jpg" IsResponsive="True" Reference="po5Zxhh7K0KFM-1nknlhVg/5_FApXnCFky6g3jdqzorUg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test Login | Practice Test Automation' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="510, 754, 107, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Username' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Username' /&gt;" Guid="23512662-9efb-4803-8c46-7aac158de44c" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8960e50c-9079-41a0-bdcd-64f5a97118cb" Text="[Password]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="practicetestautomation.com/practice-test-login" ContentHash="NXCD3u7ShkSwPX-5h1-3Ww" DesignTimeRectangle="510, 955, 900, 72" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='' aaname='Password' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f2233afa-2eab-44ca-9f98-66acb78fd2e0" InformativeScreenshot="e521fc0e84ebb482e688e8ae3efabb11.jpg" Reference="po5Zxhh7K0KFM-1nknlhVg/0luI4hxE3UeJehpVZgyeig" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test Login | Practice Test Automation' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="510, 914, 101, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Password' /&gt;" Guid="2e0be889-46ed-45de-82cd-cf3f8ac1bd7e" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,194" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8960e50c-9079-41a0-bdcd-64f5a97118cb" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="practicetestautomation.com/practice-test-login" ContentHash="1OpQR_4g00uEMdKDgbMsxw" DesignTimeRectangle="510, 1072, 191, 81" DesignTimeScaleFactor="1.5" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='submit' tag='BUTTON' /&gt;" Guid="4358d8ea-7c7a-4592-83f5-500039fef2dc" InformativeScreenshot="806cd9efdbc2b14f15db88c2278a871e.jpg" Reference="po5Zxhh7K0KFM-1nknlhVg/TXk3f6_1Mk-f3BcM6r3QaA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test Login | Practice Test Automation' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <If Condition="[Scenario=&quot;Positive_CorrectCredential&quot;]" sap:VirtualizedContainerService.HintSize="524,1582" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,317" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="successMessage" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text 'Logged In Successfully'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="8960e50c-9079-41a0-bdcd-64f5a97118cb" ScrapingOptions="None" TextString="[successMessage]" Version="V5">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="practicetestautomation.com/logged-in-successfully" ContentHash="ooWTXGTSD0u4FWf0gWlutg" DesignTimeRectangle="395, 534, 1129, 81" DesignTimeScaleFactor="1.5" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" Guid="bc13580e-08fc-4ee3-9790-3c94fdf44620" InformativeScreenshot="dfd1a2f015e1cbfb7e70cb3d42716916.jpg" Reference="po5Zxhh7K0KFM-1nknlhVg/7R7qRebwF0WGewRK1DunFQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Logged In Successfully | Practice Test Automation' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[successMessage=&quot;Logged In Successfully&quot;]" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="522,1103" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[Scenario=&quot;Negative_WrongUser&quot;]" sap:VirtualizedContainerService.HintSize="488,1043" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,317" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="UserInvalidMessage" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NGetText DisplayName="Get Text 'Username invalid'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="8960e50c-9079-41a0-bdcd-64f5a97118cb" TextString="[UserInvalidMessage]" Version="V5">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="practicetestautomation.com/practice-test-login" CVScreenId="cb3ab363-ad9b-4c21-83d8-25500504e65c" ContentHash="R_AZacl9wEeTU6WiLAvP0g" CvTextArea="536, 620, 263, 24" CvTextArgument="Your username is invalid!" CvType="Text" DesignTimeRectangle="510, 595, 900, 75" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='error' tag='DIV' /&gt;" Guid="5cf52416-96ce-42c6-a5b3-84706c490fe1" ImageAccuracyArgument="0.91" ImageBase64="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" InformativeScreenshot="e268a1cbce494e6a88ea1337da244f17.jpg" Reference="po5Zxhh7K0KFM-1nknlhVg/xEKU3a398k-8d4SbXnB2rw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test Login | Practice Test Automation' /&gt;" SearchSteps="Selector, Image, CV, SemanticSelector" SemanticSelectorArgument="The button to submit the login credentials" SemanticSelectorFindMethod="Dom" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target DesignTimeRectangle="510, 665, 900, 75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='error' tag='DIV' type='' class='show' aaname='Your username is invalid!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your username is invalid!' /&gt;" Guid="d20ff1bf-07d2-4d0f-8d84-66ebd6bb4f8b" SearchSteps="FuzzySelector" />
+                                  <uix:Target DesignTimeRectangle="510, 537, 900, 75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='error' tag='DIV' type='' class='show' aaname='Your username is invalid!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your username is invalid!' /&gt;" Guid="cec03d14-5ea5-453b-a979-bb401a3884e7" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset X="0" Y="0" />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[UserInvalidMessage=&quot;Your username is invalid!&quot;]" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,564" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[Scenario=&quot;Negative_WrongPassword&quot;]" sap:VirtualizedContainerService.HintSize="452,504" sap2010:WorkflowViewState.IdRef="If_3">
+                          <If.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,317" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="PasswordInvalidMessage" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NGetText DisplayName="Get Text 'Password invalid'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="8960e50c-9079-41a0-bdcd-64f5a97118cb" TextString="[PasswordInvalidMessage]" Version="V5">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable BrowserURL="practicetestautomation.com/practice-test-login" CVScreenId="cb3ab363-ad9b-4c21-83d8-25500504e65c" ContentHash="Spz21cxOrEOiAL9Es3sheQ" CvTextArea="536, 620, 263, 24" CvTextArgument="Your username is invalid!" CvType="Text" DesignTimeRectangle="510, 595, 900, 75" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='error' tag='DIV' /&gt;" Guid="5cf52416-96ce-42c6-a5b3-84706c490fe1" ImageAccuracyArgument="0.91" ImageBase64="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" InformativeScreenshot="639a102991a423483dabfd161c89ec3b.jpg" Reference="po5Zxhh7K0KFM-1nknlhVg/Bupd77WbnEG5Kim5eBhLRw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test Login | Practice Test Automation' /&gt;" SearchSteps="Selector, Image, CV, SemanticSelector" SemanticSelectorArgument="The button to submit the login credentials" SemanticSelectorFindMethod="Dom" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                        <uix:Target DesignTimeRectangle="510, 665, 900, 75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='error' tag='DIV' type='' class='show' aaname='Your username is invalid!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your username is invalid!' /&gt;" Guid="d20ff1bf-07d2-4d0f-8d84-66ebd6bb4f8b" SearchSteps="FuzzySelector" />
+                                        <uix:Target DesignTimeRectangle="510, 537, 900, 75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='error' tag='DIV' type='' class='show' aaname='Your username is invalid!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your username is invalid!' /&gt;" Guid="cec03d14-5ea5-453b-a979-bb401a3884e7" SearchSteps="FuzzySelector" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                    <uix:TargetAnchorable.PointOffset>
+                                      <uix:PointOffset X="0" Y="0" />
+                                    </uix:TargetAnchorable.PointOffset>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                              </uix:NGetText>
+                              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[PasswordInvalidMessage=&quot;Your password is invalid!&quot;]" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" BrowserType="Edge" ContentHash="386fP0W_T0OEwFc8cdt08A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASDSURBVFhH7ZdZSJ1HFMfjFkUR85CCPlkRRB8Ea0mxkZJQQX3QJwNF0oKCrcSmxSItVqzGuIsoLlgs7kpt0boQRQMp0USrPsQkhgTtItS0gRCCNK6tXn/lTO738d3RGzXxoQ/9w3D5Zs6c/5kzZ5l77Nj/OCQAb+Bt4APgE+Ai8B7wBuCuyx8JRLGdZATYxDn+ArqBd3UdLw0gAfhZZzoAJoBIXd+BAXgC3+haD4l/gM913fsC8AF+1LW9AhoAF51nTwBuwNDW1hbT09M0NjaSn59PdnY2lZWVXL16lbW1NZ2Ap0+f0tfXR1lZGbm5uVy+fJn29nZmZ2ex2WwiUqJz7Ynl5eXcqKgoYmJiuHbtmlK8s7OjSFZWVpiamuLSpUucO3eO06dPc+bMGZKTk6mrq+PBgwdsbj6P0e3tbR49ekRPTw/h4eEiI0oSdT4HACE2m+3vkpISWlpaHI+oIT4+nvX1debn58nMzNSXHZCenq4OA/wh16vzmgC+Fam7d+/S0CDX5hxpaWnqV0588aKUAue4cOGC8ogdX+i8CkAAsCUS4vLy8nIHJVY8e/ZMxYSB/QzQdP0OuOr8YsDHVqn6+nrrpwNKS0t5+PCh+T08PKzGXpAY6u6W2uSAaJ1fDPjBKiF3m5eXx+joKOPj49y4cYP+/n6qqqro7e21iipUV1fT1NTE0NAQN2/eVHuuXLlCVlYWq6uruvhXOr8Y8IsuJUG2sLDA7du3mZubU6fZDxL5EkN37txhcXHRevdW9Oj8YsC6sSqER41bt25ZP3/S+cWA58kOJCUlWYVfGRK0KSkp1qlZnV8MMC8qLi6OgYEB64ZdENdKXEhhMoqPMxQUFJCTk2OdmtT5xYB5Y1VSLDg4eM+SKyV6cHCQyMhIAgMDVSUMCQmhq6uLjY0NXVzFgY+Pj54J3+n8YsD3xmpnZycyped3bW0tJ0+eVGuurq4UFxeriunp6anm/Pz8VB8wID3g7Nmzau3evXtWVV/q/GLAR8aquFWmXFxcVBoKJC2FNDQ0VKWnZIeBpaUlioqKiIiIUPuuX7+u5isqKkxjNW++pfOLAa8Zrx1JN3d3d7XZ399fEbS1tREWFvbC+5YTR0dHK+KJiQmOHz+udMgVWfCr09YMmB0oMTFRbZYh8SAdUDyzH+7fv8/58+c5ceKEub+wsNAq8qnOawJ4HVC+Epd7eXmZSuQ6rIEkwShNJiMjQ6WZAQlgY4+MoKAgq/t/A7x0XgcAnxnSra2tDsoCAgJ4/PixSRYbG8upU6fMaiePDw8PD1Pe29ubmZkZQ1xeJTE63y7I/UiaGLuMQDKG3Kf0BOnv0uflLSD1QLLByBAZ4r2REXlEm9gd+c5gf5CalUieZW5ubg6GvGhIOo6NjVnJS3WOfWF/G1bYXUdHR8eBjPD19WVyctIglv7yoa77UADekV4i2sT1cjqd1BgScJamIw+EEF3fS8EeF3Hyr+fJkyfLNTU1pKamkpCQoIY8z5qbmyXa/wS+Bt7UdRwZ7FcTJqXC/v/wfXmjAkFOC8x/Gf8CehljgRoH8bcAAAAASUVORK5CYII=" InformativeScreenshot="47df6d6959377581914b863ece4b6b99.jpg" Reference="po5Zxhh7K0KFM-1nknlhVg/87LCDDd2UkOzP1t1PCbMjA" Selector="&lt;html app='msedge.exe' title='Test Login | Practice Test Automation' /&gt;" Url="https://practicetestautomation.com/practice-test-login/" Version="V3">
+          <uix:TargetApp.SapInfo>
+            <uix:SAPElementInfo IsSapSubsystem="False" WebAutomationFramework="Default" />
+          </uix:TargetApp.SapInfo>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

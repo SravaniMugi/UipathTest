@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Test Login",
+  "Type": "Screen",
+  "Id": "87LCDDd2UkOzP1t1PCbMjA",
+  "Reference": "po5Zxhh7K0KFM-1nknlhVg/87LCDDd2UkOzP1t1PCbMjA",
+  "ParentRef": "po5Zxhh7K0KFM-1nknlhVg/gbHLQoYKh0KzdQfXJfl9ZQ",
+  "Created": "2026-11-18T03:50:55.9387583Z",
+  "Updated": "2026-11-18T03:50:55.9387583Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

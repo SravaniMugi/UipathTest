@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sDPL4MfZXUGUzRhGEIpB5Q" Reference="po5Zxhh7K0KFM-1nknlhVg/5_FApXnCFky6g3jdqzorUg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="practicetestautomation.com/practice-test-login" ContentHash="C4s-U5kuikq2FSii9UoTTw" DesignTimeRectangle="510, 794, 900, 72" DesignTimeScaleFactor="1.5" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='' aaname='Username' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2d5d3751-ec20-4dc9-b348-353255c99f18" IsResponsive="True" Reference="po5Zxhh7K0KFM-1nknlhVg/5_FApXnCFky6g3jdqzorUg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Test Login | Practice Test Automation' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="510, 754, 107, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Username' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Username' /&gt;" Guid="23512662-9efb-4803-8c46-7aac158de44c" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="d04adea442bf6da2591ca31d1e71c13e.jpg" xmlns="">060TBbJ1zAkuPxtHYiJkq8w</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

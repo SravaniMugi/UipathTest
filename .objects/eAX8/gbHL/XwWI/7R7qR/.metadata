@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Logged In Successfully",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "7R7qRebwF0WGewRK1DunFQ",
+  "Reference": "po5Zxhh7K0KFM-1nknlhVg/7R7qRebwF0WGewRK1DunFQ",
+  "ParentRef": "po5Zxhh7K0KFM-1nknlhVg/XwWI_Xs0nEaWBILWCWrp3w",
+  "Created": "2026-11-18T03:50:36.1697095Z",
+  "Updated": "2026-11-18T03:50:36.1697095Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

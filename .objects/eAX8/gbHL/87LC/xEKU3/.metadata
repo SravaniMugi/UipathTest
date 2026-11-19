@@ -1,0 +1,19 @@
+﻿{
+  "Name": "Username invalid",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "xEKU3a398k-8d4SbXnB2rw",
+  "Reference": "po5Zxhh7K0KFM-1nknlhVg/xEKU3a398k-8d4SbXnB2rw",
+  "ParentRef": "po5Zxhh7K0KFM-1nknlhVg/87LCDDd2UkOzP1t1PCbMjA",
+  "Created": "2026-11-18T03:50:56.0430259Z",
+  "Updated": "2026-11-18T03:50:56.0430259Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.7.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
