@@ -14,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.1",
   "studioVersion": "26.10.0.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.248766026",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -71,7 +71,7 @@
         "fileName": "Demo\\TC_SyntheticData.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "b292ca80-2adc-4a8f-a348-7d79d1db9402",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
@@ -94,14 +94,14 @@
         "fileName": "PracticeTA\\LoginwithSwitch.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "f4236516-39c4-4f3a-abee-fbb619a84244",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "ACME\\LoginWithExcel.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "75aa40c1-1f78-47f8-9c40-7187a85c4563",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
